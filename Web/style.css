@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #101114;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.app {
+    max-width: 900px;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #292b31;
+}
+
+h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+#status {
+    color: #72d572;
+    font-size: 14px;
+}
+
+#messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.message {
+    padding: 14px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+.user {
+    background: #242832;
+}
+
+.assistant {
+    background: #181a20;
+}
+
+form {
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+    border-top: 1px solid #292b31;
+}
+
+textarea {
+    flex: 1;
+    min-height: 55px;
+    max-height: 180px;
+    resize: vertical;
+    padding: 14px;
+    border: 1px solid #383b44;
+    border-radius: 10px;
+    background: #191b21;
+    color: white;
+    font-size: 16px;
+}
+
+button {
+    align-self: flex-end;
+    padding: 14px 20px;
+    border: 0;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #111111;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.5;
+}
