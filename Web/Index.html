@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free LLM</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="app">
+    <header>
+        <h1>Free LLM</h1>
+        <span id="status">Проверка...</span>
+    </header>
+
+    <main id="messages"></main>
+
+    <form id="chat">
+        <textarea id="input" placeholder="Напиши сообщение..." autocomplete="off"></textarea>
+        <button type="submit">Отправить</button>
+    </form>
+</div>
+<script src="/static/app.js"></script>
+</body>
+</html>
